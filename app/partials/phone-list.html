@@ -1,5 +1,6 @@
 <div style="height:1000px; background-color:cyan;">
 <div class="container-fluid">
+<h1>Android Devices</h1>
   <div class="row-fluid">
     <div class="span2">
       <!--Sidebar content-->
@@ -20,7 +21,7 @@
 				<li ng-repeat="phone in phones | filter:query | orderBy:orderProp" class="thumbnail">
 				  <a href="#/phones/{{phone.id}}" class="thumb"><img ng-src="{{phone.imageUrl}}"></a>
 				  <b>{{phone.name}}</b>
-				  <p>{{phone.snippet}}</p>
+				  <i>{{phone.snippet}}</i>
 				</li>
 			
 		   </ul>	   
